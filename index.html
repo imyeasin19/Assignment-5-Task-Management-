@@ -16,6 +16,20 @@
         .font-poppins {
             font-family: "Poppins", sans-serif;
         }
+
+        .hr-line {
+            border-top: 2px dashed #ccc;
+            margin: 10px 0;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
     </style>
 </head>
 
@@ -35,6 +49,105 @@
             </div>
         </nav>
     </header>
+    <main class="lg:max-w-screen-xl lg:mx-auto mt-10">
+        <section class="grid grid-cols-4 gap-5">
+            <!-- Grid 1 -->
+            <div class="col-span-3 bg-white rounded-2xl p-4">
+                <div class="grid grid-cols-4 gap-5 ">
+                    <!-- Box-1 -->
+                    <div class="flex items-center gap-4 bg-blue-50 p-3 rounded-2xl">
+                        <img class="bg-white p-3 rounded-full" src="assets/checkbox.png" alt="">
+                        <div>
+                            <p>Task Assigned</p>
+                            <h3 class="font-bold text-3xl">05</h3>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div
+                        class="col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] rounded-2xl p-3 flex items-center gap-4">
+                        <img src="assets/board.png" alt="">
+                        <h6 class="text-white"> Discover Something <br> New Today!</h6>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="flex items-center gap-4 bg-blue-50 p-3 rounded-2xl">
+                        <img class="bg-white p-3 rounded-full" src="assets/calender.png" alt="">
+                        <div class="text-lg">
+                            <p>Wed,</p>
+                            <h3 class="font-bold">July 28 2025</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr-line"></div>
+                <!-- Grid-1 Section 2 -->
+                <div class="grid grid-cols-3 rounded-2xl gap-8">
+                    <!-- Box-1 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl">
+                        <h6 class="bg-white p-2 inline-block rounded-md">ShopEase</h6>
+                        <h5 id="box-1" class="font-medium text-xl">Fix Mobile Button Issue </h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Debug using
+                            Chrome DevTools, check for overlapping elements, and ensure onClick works properly</p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button id="completed-btn1" class="btn btn-active btn-primary">Completed</button>
+                        </div>
+                    </div>
+                    <!-- Box-2 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl">
+                        <h6 class="bg-white p-2 inline-block rounded-md">CloudSync</h6>
+                        <h5 class="font-medium text-xl">Add Dark Mode </h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Store the user's preference in localStorage, update CSS variables dynamically, and apply a
+                            smooth transition effect.</p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button class="btn btn-active btn-primary">Primary</button>
+                        </div>
+                    </div>
+                    <!-- Box-3 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl">
+                        <h6 class="bg-white p-2 inline-block rounded-md">SwiftPay</h6>
+                        <h5 class="font-medium text-xl">Optimize Home page</h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works
+                            properly
+                            and ensure onClick works properly</p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button class="btn btn-active btn-primary">Primary</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Grid-2 -->
+            <div id="" class="bg-white rounded-2xl p-4 flex flex-col items-center space-y-4">
+                <div class="flex items-center gap-2 mt-3">
+                    <img src="assets/activity.png" alt="">
+                    <h3 class="text-xl font-medium ">Activity log</h3>
+                </div>
+                <button class="btn btn-active btn-primary">Primary</button>
+                <div id="activity-container">
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script src="script/function.js"></script>
+    <script src="script/completed.js"></script>
+
 </body>
 
 </html>
