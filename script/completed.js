@@ -30,3 +30,15 @@ document.getElementById('discover-box').addEventListener("click",function(event)
     event.preventDefault();
     window.location.href = "discover.html";
 })
+
+document.getElementById("clear-btn").addEventListener("click", function(event){
+    event.preventDefault();
+    const container = document.getElementById('log-container');
+    container.innerHTML = "";
+})
+document.getElementById('Date').innerText = new Date().toDateString();
+
+document.getElementById('color-change').addEventListener('click',function(){
+    const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    document.getElementById('body').style.backgroundColor = randomColor;    
+})

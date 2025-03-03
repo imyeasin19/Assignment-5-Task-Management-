@@ -33,7 +33,7 @@
     </style>
 </head>
 
-<body class="bg-blue-50 font-poppins">
+<body id="body" class="bg-blue-50 font-poppins">
     <header class="lg:max-w-screen-xl lg:mx-auto">
         <nav class="bg-white rounded-2xl p-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
@@ -45,7 +45,7 @@
                     <img src="assets/checkbox.png" alt="">
                     <h3 id="total-task" class="font-bold text-3xl">23</h3>
                 </div>
-                <img class="bg-blue-50 p-4 rounded-full" src="assets/theme-btn.png" alt="">
+                <img id="color-change" class="bg-blue-50 p-4 rounded-full" src="assets/theme-btn.png" alt="">
             </div>
         </nav>
     </header>
@@ -73,7 +73,7 @@
                         <img class="bg-white p-3 rounded-full" src="assets/calender.png" alt="">
                         <div class="text-lg">
                             <p>Wed,</p>
-                            <h3 class="font-bold">July 28 2025</h3>
+                            <h3 id="Date" class="font-bold"> </h3>
                         </div>
                     </div>
                 </div>
@@ -185,7 +185,7 @@
                     <img src="assets/activity.png" alt="">
                     <h3 class="text-xl font-medium">Activity Log</h3>
                 </div>
-                <button class="btn btn-active btn-primary">Primary</button>
+                <button id="clear-btn" class="btn btn-active btn-primary">Clear History</button>
                 <div id="log-container"></div>
             </div>
         </section>
