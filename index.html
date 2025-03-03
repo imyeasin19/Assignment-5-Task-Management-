@@ -35,7 +35,7 @@
 
 <body class="bg-blue-50 font-poppins">
     <header class="lg:max-w-screen-xl lg:mx-auto">
-        <nav class="bg-white rounded-2xl p-6 flex justify-between items-center">
+        <nav class="bg-white rounded-2xl p-4 flex justify-between items-center">
             <div class="flex items-center gap-2">
                 <img src="assets/logo.png" alt="">
                 <h3 class="text-4xl text-[#00303C]">Dev<span class="font-bold">Board</span></h3>
@@ -50,10 +50,10 @@
         </nav>
     </header>
     
-    <main class="lg:max-w-screen-xl lg:mx-auto mt-10">
+    <main class="lg:max-w-screen-xl lg:mx-auto mt-8">
         <section class="grid grid-cols-4 gap-5">
             <!-- Grid 1 -->
-            <div class="col-span-3 bg-white rounded-2xl p-4">
+            <div class="col-span-3 bg-white rounded-2xl p-4 mb-10">
                 <div class="grid grid-cols-4 gap-5">
                     <!-- Box-1 -->
                     <div class="flex items-center gap-4 bg-blue-50 p-3 rounded-2xl">
@@ -79,9 +79,8 @@
                 </div>
 
                 <div class="hr-line"></div>
-
                 <!-- Task Grid -->
-                <div class="grid grid-cols-3 rounded-2xl gap-8">
+                <div class="grid grid-cols-3 rounded-2xl gap-6">
                     <!-- Task Box 1 -->
                     <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
                         <h6 class="bg-white p-2 inline-block rounded-md">ShopEase</h6>
@@ -98,7 +97,6 @@
                             <button class="completed-btn btn btn-active btn-primary">Completed</button>
                         </div>
                     </div>
-
                     <!-- Task Box 2 -->
                     <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
                         <h6 class="bg-white p-2 inline-block rounded-md">CloudSync</h6>
@@ -115,7 +113,6 @@
                             <button class="completed-btn btn btn-active btn-primary">Completed</button>
                         </div>
                     </div>
-
                     <!-- Task Box 3 -->
                     <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
                         <h6 class="bg-white p-2 inline-block rounded-md">SwiftPay</h6>
@@ -132,11 +129,58 @@
                             <button class="completed-btn btn btn-active btn-primary">Completed</button>
                         </div>
                     </div>
+                    <!-- Task Box 4 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
+                        <h6 class="bg-white p-2 inline-block rounded-md">Meta</h6>
+                        <h5 class="task-name font-medium text-xl">Add new emoji 🤲</h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly
+                        </p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button class="completed-btn btn btn-active btn-primary">Completed</button>
+                        </div>
+                    </div>
+                    <!-- Task Box 5 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
+                        <h6 class="bg-white p-2 inline-block rounded-md">Google LLC</h6>
+                        <h5 class="task-name font-medium text-xl">Integrate OpenAI API </h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.
+                        </p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button class="completed-btn btn btn-active btn-primary">Completed</button>
+                        </div>
+                    </div>
+                    <!-- Task Box 6 -->
+                    <div class="p-4 space-y-4 bg-blue-50 rounded-2xl task-box">
+                        <h6 class="bg-white p-2 inline-block rounded-md">Glassdoar</h6>
+                        <h5 class="task-name font-medium text-xl">Improve Job searching </h5>
+                        <p class="bg-white p-3 max-h-16 overflow-auto text-gray-500 no-scrollbar rounded-md text-base">
+                            Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly.
+                        </p>
+                        <div class="hr-line"></div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <p>Deadline</p>
+                                <h6>21 March 2025</h6>
+                            </div>
+                            <button class="completed-btn btn btn-active btn-primary">Completed</button>
+                        </div>
+                    </div>
                 </div>
             </div>
-
             <!-- Activity Log -->
-            <div id="activity-container" class="bg-white rounded-2xl p-4 flex flex-col items-center space-y-4">
+            <div id="activity-container" class="bg-white rounded-2xl p-4 flex flex-col items-center space-y-4 mb-10">
                 <div class="flex items-center gap-2 mt-3">
                     <img src="assets/activity.png" alt="">
                     <h3 class="text-xl font-medium">Activity Log</h3>
