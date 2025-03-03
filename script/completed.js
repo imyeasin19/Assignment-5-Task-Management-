@@ -7,10 +7,12 @@ document.querySelectorAll('.completed-btn').forEach(button => {
         const name = this.closest('.task-box').querySelector('.task-name').innerText;
         let currentDate = new Date();
         const time = currentDate.toLocaleTimeString();
-
-        p.innerText = `You have completed the task "${name}" at ${time}`;
+        p.innerHTML = `
+        <p class="rounded-lg bg-blue-50 p-3 mb-4 text-sm"> 
+        You have completed the task "${name}" at ${time}
+        </p>
+        `;
         container.appendChild(p);
-
         this.disabled = true;
 
         const task = getInnerText('task');
@@ -19,5 +21,12 @@ document.querySelectorAll('.completed-btn').forEach(button => {
         const totaltask = getInnerText('total-task');
         const total = totaltask + 1;
         setInnerText('total-task', total);
+        if(sum == 0){
+            alert("Congratulations! You have completed all the tasks.");
+        }
     });
 });
+document.getElementById('discover-box').addEventListener("click",function(event){
+    event.preventDefault();
+    window.location.href = "discover.html";
+})
